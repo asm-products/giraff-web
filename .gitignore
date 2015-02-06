@@ -1,0 +1,12 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+ignore_*
+
+bower_components
+.DS_Store
