@@ -1,0 +1,96 @@
+body {
+  background-color: #FFE637;
+  font-family: 'Cabin Sketch', Arial, serif;
+  color: #FFF;
+  font-size: 16px;
+}
+
+#main {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#logo {
+  margin: 0 auto;
+  display: block;
+}
+
+#fun {
+  background-image: url(/assets/images/fun-image.png);
+  width: 141px;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tagline {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #9A7100;
+  font-size: 2em;
+}
+
+#phone {
+  background-image: url(/assets/images/phone.png);
+  width: 198px;
+  height: 412px;
+  margin: 40px auto 40px auto;
+  padding-top: 80px;
+}
+
+#fun-gif-holder {
+  margin: 0 auto;
+  width: 166px;
+  height: 147px;
+  overflow: hidden;
+}
+
+#mailing-list {
+
+}
+
+#mailing-list p {
+  font-size: 1.8em;
+}
+
+#email-input{
+  border: 5px solid #95E241;
+  height: 60px;
+}
+
+#mailing-list .btn-mailing-list {
+  background-color: #95E241;
+  height: 60px;
+}
+
+.hide-text {
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#assembly {
+  padding-top: 0px;
+  text-align: left;
+}
+
+footer {
+  background: #9A7100;
+  margin-top: 40px;
+  color: #FFE637;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+
+footer a {
+  color: #FFE637;
+  padding-top: 18px;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #FFE637;
+  text-decoration: none;
+}
