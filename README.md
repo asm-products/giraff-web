@@ -1,4 +1,4 @@
-# Giraff
+# Fun
 
 <a href="https://assembly.com/giraff/bounties?utm_campaign=assemblage&utm_source=giraff&utm_medium=repo_badge"><img src="https://asm-badger.herokuapp.com/giraff/badges/tasks.svg" height="24px" alt="Open Tasks" /></a>
 
