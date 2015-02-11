@@ -1,42 +1,35 @@
 body {
-  background-color: #FFE637;
-  font-family: 'Cabin Sketch', Arial, serif;
+  background-color: #2a2625;
+  font-family: "Times New Roman", Serif;
   color: #FFF;
   font-size: 16px;
 }
 
 #main {
-  padding-top: 40px;
-  text-align: center;
+  padding-top: 150px;
+  background: #302b2a url(/assets/images/fun-bk-tile.jpg) repeat-x;
 }
+
 
 #logo {
-  margin: 0 auto;
-  display: block;
-}
-
-#fun {
-  background-image: url(/assets/images/fun-image.png);
-  width: 141px;
-  height: 92px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #tagline {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  color: #9A7100;
-  font-size: 2em;
+  margin-top: 10px;
+  font-size: 2.6em;
+}
+
+.omit {
+  text-decoration: line-through;
 }
 
 #phone {
   background-image: url(/assets/images/phone.png);
-  width: 198px;
-  height: 412px;
-  margin: 40px auto 40px auto;
+  width: 247px;
+  height: 499px;
+  margin: 0 auto;
   padding-top: 80px;
+  margin-bottom: 30px;
 }
 
 #fun-gif-holder {
@@ -47,21 +40,20 @@ body {
 }
 
 #mailing-list {
-
+  margin-top: 70px;
 }
 
-#mailing-list p {
-  font-size: 1.8em;
+
+#mailing-list .btn-mailing-list {
+  background-color: #eab621;
+  height: 40px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 0 30px;
 }
 
 #email-input{
-  border: 5px solid #95E241;
-  height: 60px;
-}
-
-#mailing-list .btn-mailing-list {
-  background-color: #95E241;
-  height: 60px;
+  height: 40px;
 }
 
 .hide-text {
@@ -71,26 +63,53 @@ body {
 }
 
 #assembly {
-  padding-top: 0px;
-  text-align: left;
+  text-align: center;
+  display: block;
 }
 
 footer {
-  background: #9A7100;
-  margin-top: 40px;
-  color: #FFE637;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  margin-top: 20px;
+  color: #8d8481;
+  font-size: 20px;
 }
 
-
 footer a {
-  color: #FFE637;
-  padding-top: 18px;
+  color: #8d8481;
   text-align: center;
 }
 
 footer a:hover {
-  color: #FFE637;
+  color: #8d8481;
   text-decoration: none;
+}
+
+footer a.fa  {
+  color: #2a2625;
+  background-color: #8d8481;
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 30px;
+  margin: 0px auto;
+}
+
+
+@media(max-width:767px){
+
+  body {
+    text-align: center;
+  }
+
+  #main {
+    padding-top: 20px;
+  }
+
+  #mailing-list {
+    margin-top: 30px;
+  }
+
+  #phone {
+    margin-top: 30px;
+  }
+
 }
