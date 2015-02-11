@@ -7,7 +7,7 @@ body {
 
 #main {
   padding-top: 150px;
-  background: #302b2a url(/assets/images/fun-bk-tile.jpg) repeat-x;
+  background: #302b2a url(../images/fun-bk-tile.jpg) repeat-x;
 }
 
 
@@ -24,7 +24,7 @@ body {
 }
 
 #phone {
-  background-image: url(/assets/images/phone.png);
+  background-image: url(../images/phone.png);
   width: 247px;
   height: 499px;
   margin: 0 auto;
