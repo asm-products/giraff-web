@@ -10,7 +10,6 @@ body {
   background: #302b2a url(../images/fun-bk-tile.jpg) repeat-x;
 }
 
-
 #logo {
 }
 
@@ -40,9 +39,8 @@ body {
 }
 
 #mailing-list {
-  margin-top: 70px;
+  margin-top: 40px;
 }
-
 
 #mailing-list .btn-mailing-list {
   background-color: #eab621;
@@ -62,13 +60,8 @@ body {
   overflow: hidden;
 }
 
-#assembly {
-  text-align: center;
-  display: block;
-}
-
 footer {
-  margin-top: 20px;
+  margin-top: 2em;
   color: #8d8481;
   font-size: 20px;
 }
@@ -93,6 +86,38 @@ footer a.fa  {
   margin: 0px auto;
 }
 
+
+/* Shortcode */
+#shortcode {
+  text-align: center;
+}
+
+#shortcode .logo{
+  padding-top: 3em;
+}
+
+#shortcode .logo img{
+  height:75px;
+}
+
+#shortcode .shortcode-image-container{
+  padding:1.5em 1em;
+}
+
+#shortcode .shortcode-image img{
+  width:100%;
+}
+
+#shortcode .shortcode-image{
+  padding: 1em;
+}
+
+#shortcode textarea{
+  background-color: #302b2a;
+  border:none;
+  width:100%;
+  text-align: center;
+}
 
 @media(max-width:767px){
 
