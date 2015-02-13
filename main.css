@@ -1,3 +1,4 @@
+
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 
 body {
@@ -322,9 +323,9 @@ max-height: 300;
   
   .agree {
     border-radius: 62px;
-top: 660px;
+top: 665px;
 position: absolute;
-left: 341px;
+left: 354px;
 height: 121;
 width: 122;
 -webkit-transition: background-color 400;
@@ -341,11 +342,11 @@ background-color: rgba(254, 213, 79, 0.30);
 a.disagree {
   z-index: 300;
 border-radius: 62px;
-top: 654px;
+top: 665px;
 position: absolute;
 height: 121;
 width: 122;
-left: 43px;
+left: 58px;
 -webkit-transition: background-color 400;
       }
 .disagree:hover {
