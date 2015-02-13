@@ -255,12 +255,56 @@ footer a.fa  {
 }
 
 @keyframes bouncedelay {
-  0%, 80%, 100% { 
+  0%, 80%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 40% { 
+  } 40% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
 }
 
+
+/*THANK YOU PAGE*/
+
+#thank-you {
+  background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
+}
+
+#thank-you > section {
+  padding-top: 100px;
+}
+
+#thank-you p {
+  font-size: 1.5em;
+}
+
+#thanks-text {
+  color: #E8B522;
+  margin: 75px 0;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+#cheering-minons {
+  margin-bottom: 50px;
+}
+
+#social-icons {
+  color: #E8B522;
+  margin-top: 40px;
+}
+
+#social-icons a {
+  color: #E8B522;
+  text-decoration: none;
+}
+
+#social-icons a:hover {
+  color: #E8B522;
+  text-decoration: none;
+}
+
+#social-icons .list-inline > li {
+  margin: 0 30px;
+}
