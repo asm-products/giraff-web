@@ -1,152 +1,133 @@
 body {
-  background-color: #2a2625;
-  font-family: "Times New Roman", Serif;
-  color: #FFF;
-  font-size: 16px;
+    background-color: #2a2625;
+    font-family: "Times New Roman", Serif;
+    color: #FFF;
+    font-size: 16px;
 }
-
 h1,
 h2 {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url("../font/OpenType/GothamRnd-Bold.otf") format("opentype"), url("../font/OpenType/GothamRnd-BoldIta.otf") format("opentype"), url("../font/OpenType/GothamRnd-Book.otf") format("opentype"), url("../font/OpenType/GothamRnd-BookIta.otf") format("opentype"), url("../font/OpenType/GothamRnd-Light.otf") format("opentype"), url("../font/OpenType/GothamRnd-LightIta.otf") format("opentype"), url("../font/OpenType/GothamRnd-MedIta.otf") format("opentype"), url("../font/OpenType/GothamRnd-Medium.otf") format("opentype"), ;
+}
 #main {
-	padding: 65px 0 65px 0;
-	
-	background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
+    padding: 70px 0 100px 0;
+    background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
 }
-
-.custompad {
-	padding-top: 80px;
+section .row {
+    margin: 100px 0 100px 0;
 }
-
-#logo {
+#logo {} #tagline {
+    margin-top: 10px;
+    font-size: 2.6em;
 }
-
-#tagline {
-  margin-top: 10px;
-  font-size: 2.6em;
-}
-
 .omit {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
-
 #phone {
-  background-image: url(../images/phone.png);
-  width: 247px;
-  height: 499px;
-  margin: 0 auto;
-  padding-top: 80px;
-  margin-bottom: 30px;
+    background-image: url(../images/phone.png);
+    width: 247px;
+    height: 499px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 30px;
 }
-
 #fun-gif-holder {
-  margin: 0 auto;
-  width: 166px;
-  height: 147px;
-  overflow: hidden;
+    margin: 0 auto;
+    width: 166px;
+    height: 147px;
+    overflow: hidden;
 }
-
 #mailing-list {
-  margin-top: 70px;
+    margin-top: 70px;
 }
-
-
 #mailing-list .btn-mailing-list {
-  background-color: #eab621;
-  height: 40px;
-  text-transform: uppercase;
-  border-radius: 30px;
-  padding: 0 30px;
+    background-color: #eab621;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 0 30px;
 }
-
-#email-input{
-  height: 40px;
+#email-input {
+    height: 40px;
 }
-
 .hide-text {
-  text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
 #assembly {
-  text-align: center;
-  display: block;
+    text-align: center;
+    display: block;
 }
-
 footer.landing {
-	margin-top: 20px;
-	color: #8d8481;
-	font-size: 20px;
+    margin-top: 20px;
+    color: #8d8481;
+    font-size: 20px;
 }
-
 footer.landing a {
-	color: #8d8481;
-	text-align: center;
+    color: #8d8481;
+    text-align: center;
 }
-
 footer.landing a:hover {
-	color: #8d8481;
-	text-decoration: none;
+    color: #8d8481;
+    text-decoration: none;
 }
-
 footer.landing a.fa {
-	color: #2a2625;
-	background-color: #8d8481;
-	border-radius: 50%;
-	padding: 5px;
-	width: 35px;
-	height: 30px;
-	margin: 0px auto;
+    color: #2a2625;
+    background-color: #8d8481;
+    border-radius: 50%;
+    padding: 5px;
+    width: 35px;
+    height: 30px;
+    margin: 0px auto;
 }
-
 .hero-text {
-	color: #e8b522;
-	font-family: arial;
-	font-weight: bold;
+    color: #e8b522;
+    font-family: 'Gotham Rounded',arial;
+    font-weight: bold;
 }
-
 .subtext {
-	font-family: arial;
-	font-style: italic;
+    font-family: 'Gotham Rounded',arial;
+    font-style: italic;
 }
-
 footer.custompad {
-	margin-top: 0;
+    padding-top: 40px;
 }
-
 footer.custompad a.fa {
-	color: #ffd44f;
+    color: #ffd44f;
+    text-decoration: none;
 }
-
-footer.custompad .fa-facebook {
-	padding: 0 40px 0 40px;
+footer.custompad ul {
+    list-style: none;
 }
-
+footer.custompad ul li {
+    display: inline;
+    padding: 0 40px 0 40px;
+}
 .img-responsive {
-	display: inline;
+    display: inline;
 }
-
 @media(max-width:767px) {
-	body {
-		text-align: center;
-	}
-	#main {
-		padding: 40px 0 40px 0;
-	}
-	#mailing-list {
-		margin-top: 30px;
-	}
-	#phone {
-		margin-top: 30px;
-	}
-	footer.custompad {
-		margin-top: 0;
-	}
-	.custompad {
-		padding-top: 40px;
-	}	
+    body {
+        text-align: center;
+    }
+    #main {
+        padding: 40px 0 40px 0;
+    }
+    #mailing-list {
+        margin-top: 30px;
+    }
+    #phone {
+        margin-top: 30px;
+    }
+    footer.custompad {
+        margin-top: 0;
+    }
+    section .row {
+        margin: 40px 0 40px 0;
+    }
 }
