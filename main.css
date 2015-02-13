@@ -322,9 +322,9 @@ max-height: 300;
   
   .agree {
     border-radius: 62px;
-top: 665px;
+top: 660px;
 position: absolute;
-left: 349px;
+left: 341px;
 height: 121;
 width: 122;
 -webkit-transition: background-color 400;
@@ -341,11 +341,11 @@ background-color: rgba(254, 213, 79, 0.30);
 a.disagree {
   z-index: 300;
 border-radius: 62px;
-top: 661px;
+top: 654px;
 position: absolute;
 height: 121;
 width: 122;
-left: 53px;
+left: 43px;
 -webkit-transition: background-color 400;
       }
 .disagree:hover {
