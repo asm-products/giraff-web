@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/stylesheets/main.css" media="screen" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
   </head>
   <body>
     <section id="shortcode" style="display:none;">
@@ -70,7 +71,7 @@
           <div class="col-md-5 col-md-push-6">
             <img id="logo" src="assets/images/logo.png" alt="Fun logo" />
             <p id="tagline">
-              Tinder for the best gifs in the <span class="omit">world</span> galaxy
+              Tinder for the best gifs in the galaxy
             </p>
 
             <div class="row">
@@ -99,14 +100,14 @@
 
           <div class="col-md-4 col-md-offset-2 col-md-pull-5">
             <div id="phone">
-
+              <img src="http://i.imgur.com/gW0VfdX.gif">
+              <img class="buttonIcon" src="https://d8izdk6bl4gbi.cloudfront.net/https://d1015h9unskp4y.cloudfront.net/attachments/98b37767-0d70-46bf-99a3-539a0e1de1bb/Buttons.png">
             </div>
           </div>
         </div>
 
       </div>
     </section>
-
     <footer>
       <nav class="container">
         <div class="row">
@@ -120,29 +121,15 @@
         </div>
       </nav>
     </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <script type="text/javascript">
-      ENDPOINT = "http://localhost:3000/shortcode/"
-      $(document).ready(function(){
-        var hash = window.location.hash;
-        if (hash) {
-          hash = hash.substr(1)
-          $.ajax({
-              url: ENDPOINT + hash + '.json',
-              type: 'get',
-              error: function(XMLHttpRequest, textStatus, errorThrown){
-                console.log("error");
-              },
-              success: function(data){
-                $('#main').remove();
-                $('#image-share-link').text(window.location);
-                $('#image-caption').text(data.name);
-                $('#image-view').attr('src', data.original_source);
-                $('#shortcode').show();
-              }
-          });
-        }
-      });
+      ga('create', 'UA-59726211-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
   </body>
 </html>
