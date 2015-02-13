@@ -5,11 +5,21 @@ body {
   font-size: 16px;
 }
 
-#main {
-  padding-top: 150px;
-  background: #302b2a url(../images/fun-bk-tile.jpg) repeat-x;
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
 }
 
+#main {
+	padding: 65px 0 65px 0;
+	
+	background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
+}
+
+.custompad {
+	padding-top: 80px;
+}
 
 #logo {
 }
@@ -67,49 +77,76 @@ body {
   display: block;
 }
 
-footer {
-  margin-top: 20px;
-  color: #8d8481;
-  font-size: 20px;
+footer.landing {
+	margin-top: 20px;
+	color: #8d8481;
+	font-size: 20px;
 }
 
-footer a {
-  color: #8d8481;
-  text-align: center;
+footer.landing a {
+	color: #8d8481;
+	text-align: center;
 }
 
-footer a:hover {
-  color: #8d8481;
-  text-decoration: none;
+footer.landing a:hover {
+	color: #8d8481;
+	text-decoration: none;
 }
 
-footer a.fa  {
-  color: #2a2625;
-  background-color: #8d8481;
-  border-radius: 50%;
-  padding: 5px;
-  width: 35px;
-  height: 30px;
-  margin: 0px auto;
+footer.landing a.fa {
+	color: #2a2625;
+	background-color: #8d8481;
+	border-radius: 50%;
+	padding: 5px;
+	width: 35px;
+	height: 30px;
+	margin: 0px auto;
 }
 
+.hero-text {
+	color: #e8b522;
+	font-family: arial;
+	font-weight: bold;
+}
 
-@media(max-width:767px){
+.subtext {
+	font-family: arial;
+	font-style: italic;
+}
 
-  body {
-    text-align: center;
-  }
+footer.custompad {
+	margin-top: 0;
+}
 
-  #main {
-    padding-top: 20px;
-  }
+footer.custompad a.fa {
+	color: #ffd44f;
+}
 
-  #mailing-list {
-    margin-top: 30px;
-  }
+footer.custompad .fa-facebook {
+	padding: 0 40px 0 40px;
+}
 
-  #phone {
-    margin-top: 30px;
-  }
+.img-responsive {
+	display: inline;
+}
 
+@media(max-width:767px) {
+	body {
+		text-align: center;
+	}
+	#main {
+		padding: 40px 0 40px 0;
+	}
+	#mailing-list {
+		margin-top: 30px;
+	}
+	#phone {
+		margin-top: 30px;
+	}
+	footer.custompad {
+		margin-top: 0;
+	}
+	.custompad {
+		padding-top: 40px;
+	}	
 }
