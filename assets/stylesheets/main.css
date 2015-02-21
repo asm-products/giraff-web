@@ -305,9 +305,9 @@ footer a.fa  {
 }
   
 .share .fa, .disagree .fa, .agree .fa {
-line-height: 45px;
-font-size: 20px;
-color: white;
+  line-height: 45px;
+  font-size: 20px;
+  color: white;
 }
 
 .share {
@@ -316,8 +316,7 @@ color: white;
   left: 172px;
   height: 45px;
   width: 45px;
-    display:inline-block;
-
+  display: inline-block;
   -webkit-transition: background-color 400;
 }
 .options{
@@ -467,70 +466,70 @@ color: white;
 }
 
 /* mobile */
-@media(max-width:440px){
+@media(max-width:440px) {
 
-    #thank-you > section {
-        padding-top: 20px;
-    }
+  #thank-you > section {
+    padding-top: 20px;
+  }
 
-    #thanks-text {
-        font-size: 2em;
-        margin: 30px 0;
-    }
+  #thanks-text {
+    font-size: 2em;
+    margin: 30px 0;
+  }
 
-    #cheering-minons {
-        margin-bottom: 20px;
-    }
+  #cheering-minons {
+    margin-bottom: 20px;
+  }
 
-    #thank-you p {
-        font-size: 0.8em;
-    }
+  #thank-you p {
+    font-size: 0.8em;
+  }
 
-    #social-icons {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+  #social-icons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
-    #mailing-list {
-        margin-top: 0;
-    }
+  #mailing-list {
+    margin-top: 0;
+  }
 
 }
 
 /* tablet */
-@media(max-width:767px){
+@media(max-width:767px) {
 
-    body {
-      text-align: center;
-    }
+  body {
+    text-align: center;
+  }
 
-    #main {
-      padding-top: 20px;
-    }
+  #main {
+    padding-top: 20px;
+  }
 
-    #mailing-list {
-      margin-top: 30px;
-    }
+  #mailing-list {
+    margin-top: 30px;
+  }
 
-    #phone {
-      margin-top: 30px;
-    }
+  #phone {
+    margin-top: 30px;
+  }
 
-    #tagline {
-        font-size: 2em;
-    }
+  #tagline {
+    font-size: 2em;
+  }
 
-    #mc-embedded-subscribe {
-        margin-top: 10px;
-    }
+  #mc-embedded-subscribe {
+    margin-top: 10px;
+  }
 }
 
-@media(max-width:977px){
+@media(max-width:977px) {
 
-    #mailing-list {
-      overflow: hidden;
-      margin-top: 0px;
-      margin-bottom: 40px;
-    }
+  #mailing-list {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
 }
 
