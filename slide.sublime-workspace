@@ -1,0 +1,520 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fade",
+				"fadeToggle	.fadeToggle()"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
+				"bord",
+				"border-style"
+			],
+			[
+				"bo",
+				"border-width"
+			],
+			[
+				"outline",
+				"outline-color"
+			],
+			[
+				"fle",
+				"flex-end"
+			],
+			[
+				"COLOR",
+				"border-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"slide",
+				"slideUp"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"ab",
+				"about"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"readin",
+				"reading-list-container"
+			],
+			[
+				"contac",
+				"contact-container"
+			],
+			[
+				"s",
+				"slideToggle"
+			],
+			[
+				"t",
+				"tools-container"
+			],
+			[
+				"tools",
+				"tools"
+			],
+			[
+				"c",
+				"cv"
+			],
+			[
+				"about",
+				"about-container"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"W",
+				"width"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"l",
+				"li	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ss",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa li",
+				"Package Control: List Packages"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"bs3 na",
+				"Snippet: bs3-navbar"
+			],
+			[
+				"pain",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sh",
+				"Set Syntax: HTML"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/nidejs",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/API GIfa",
+		"/C/Users/Latitude/Documents/Notes/notes react",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/express.js",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/node tutorial.js",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/main.js",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/main.html",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/main.css",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/styles.scss",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/hammer.js",
+		"/C/Users/Latitude/Documents/GitHub/giraff-web/old code",
+		"/C/Users/Latitude/Documents/Demo1.html",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/CSS/style.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/Templates/READING.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/JS/main.js",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/styles2.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/index.html",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/Templates/CV.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/JS/jquery.tablesorter.min.js",
+		"/C/Users/Latitude/Documents/GitHub/Bits/Mark Down Tutorial",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/CSS/list.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/JS/list.js",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/Templates/ABOUT.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/owl.carousel.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/main.js",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/ABOUT.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/CONTACT.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/style.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/owl.carousel.min.js",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/READING.TXT",
+		"/C/Users/Latitude/Downloads/owl.carousel (1).zip",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/owl.carousel.zip",
+		"/C/Users/Latitude/Documents/GitHub/Bits/Bits of Code.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/CNAME",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/.gitattributes",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/TOOLS.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/TECHNOLOGIES.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/README.md",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/CV.TXT",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/.gitignore",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/Mark Down Tutorial",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/Bits of Code.css",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/animation.css",
+		"/C/Users/Latitude/Documents/GitHub/Stylebot-for-IGN.com/IGN-Stylebot.css",
+		"/C/Users/Latitude/Desktop/Images/swirl_pattern.css",
+		"/C/Users/Latitude/Desktop/Images/swirl_pattern.zip",
+		"/C/Users/Latitude/Documents/GitHub/Portfolio/practice.html",
+		"/C/Users/Latitude/Desktop/myfirstpage"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"4",
+			"fast",
+			"slide.img",
+			"$(\".disagree-icon\").fadeToggle('slow');",
+			";\n",
+			"div",
+			"josh",
+			"alert",
+			"section",
+			"sections",
+			"restart",
+			"overflow",
+			"skip",
+			"li",
+			"div",
+			"button",
+			"owl",
+			"li",
+			"portfolio",
+			"owl",
+			"//",
+			"// 	",
+			"3",
+			"state =",
+			"			$(",
+			"// ",
+			"<li",
+			"li",
+			"<li ",
+			"class=\"\"",
+			"=\"\"><",
+			"flex-item",
+			" href=\"",
+			"<button",
+			"\">",
+			"<button",
+			"</l",
+			"<button",
+			"this",
+			"reading",
+			"item",
+			"flex-item",
+			"\n}",
+			"<br>",
+			"h3",
+			"3",
+			"2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "slide.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"owl.carousel.min.js",
+				"owl.carousel.min.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"main",
+				"main.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"s",
+				"style.css"
+			],
+			[
+				"",
+				"index.html"
+			],
+			[
+				"m",
+				"main.js"
+			],
+			[
+				"y",
+				"C:\\Users\\Latitude\\Documents\\GitHub\\Portfolio\\style.css"
+			],
+			[
+				"s/i",
+				"C:\\Users\\Latitude\\Documents\\GitHub\\Portfolio\\index.html"
+			],
+			[
+				"i",
+				"C:\\Users\\Latitude\\Documents\\GitHub\\Portfolio\\index.html"
+			],
+			[
+				"style",
+				"C:\\Users\\Latitude\\Documents\\GitHub\\Portfolio\\style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
