@@ -21,6 +21,7 @@ body {
   font-family: "Open Sans", Sans-Serif;
   color: #FFF;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 #main {
@@ -29,11 +30,17 @@ body {
 }
 
 #logo {
+  position: relative;
+  max-width: 100%;
 }
 
 #tagline {
-  margin-top: 10px;
-  font-size: 2.6em;
+  font-family: 'GothamRounded-Bold', 'Open Sans', sans-serif;
+  margin-top: 30px;
+  font-size: 2.4em;
+}
+h5, #mc-embedded-subscribe {
+  font-family: 'GothamRounded-Bold', 'Open Sans', sans-serif;
 }
 
 .omit {
@@ -42,6 +49,9 @@ body {
 
 #phone {
   background-image: url(../images/phone.png);
+  background-size: contain;
+  border-radius: 36px;
+  overflow: hidden;
   width: 247px;
   height: 499px;
   margin: 0 auto;
@@ -49,6 +59,7 @@ body {
   margin-bottom: 30px;
   overflow: hidden;
   text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
 #phone img {
@@ -465,8 +476,55 @@ footer a.fa  {
   margin: 0 20px;
 }
 
+@media(max-width:991px) {
+
+  #main {
+    background-repeat: repeat;
+  }
+
+  #mailing-list {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+/* tablet */
+@media(max-width:767px) {
+
+  body {
+    text-align: center;
+  }
+
+  #main {
+    padding-top: 20px;
+  }
+
+  #mailing-list {
+    margin-top: 14px;
+  }
+
+  #phone {
+    margin-top: 30px;
+  }
+
+  #tagline {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #mc-embedded-subscribe {
+    margin-top: 10px;
+  }
+}
+
 /* mobile */
 @media(max-width:440px) {
+
+  #main {
+    background-size: contain;
+  }
 
   #thank-you > section {
     padding-top: 20px;
@@ -490,46 +548,21 @@ footer a.fa  {
     margin-bottom: 10px;
   }
 
-  #mailing-list {
-    margin-top: 0;
-  }
-
-}
-
-/* tablet */
-@media(max-width:767px) {
-
-  body {
+  #email-input {
     text-align: center;
   }
 
-  #main {
-    padding-top: 20px;
-  }
-
   #mailing-list {
-    margin-top: 30px;
-  }
-
-  #phone {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   #tagline {
-    font-size: 2em;
+    font-size: 1.2em;
+    padding: 0 20px 0;
   }
 
-  #mc-embedded-subscribe {
-    margin-top: 10px;
-  }
-}
-
-@media(max-width:977px) {
-
-  #mailing-list {
-    overflow: hidden;
-    margin-top: 0px;
+  .list-inline {
     margin-bottom: 40px;
   }
 }
-
