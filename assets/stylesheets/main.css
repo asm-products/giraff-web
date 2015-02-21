@@ -418,7 +418,7 @@ color: white;
 }
 
 #thank-you > section {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #thank-you h3 {
@@ -432,13 +432,14 @@ color: white;
 
 #thanks-text {
   color: #E8B522;
-  margin: 75px 0;
+  margin: 40px 0;
   text-transform: uppercase;
   font-size: 3em;
 }
 
 #cheering-minons {
   margin-bottom: 50px;
+  max-width: 400px;
 }
 
 #social-icons {
@@ -483,7 +484,7 @@ color: white;
 }
 
 /* mobile */
-@media(max-width:340px){
+@media(max-width:440px){
 
     #thank-you > section {
       padding-top: 20px;
@@ -504,6 +505,7 @@ color: white;
 
     #social-icons {
       margin-top: 20px;
+      margin-bottom: 10px;
     }
 
 }
