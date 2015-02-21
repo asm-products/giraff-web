@@ -85,7 +85,7 @@ $(document).ready(function(){
         card.animate({
           left: 0,
           top: 0,
-          backgroundColor: none
+          backgroundColor: transparent
         }, 200);
       }
       event.gesture.stopDetect();
@@ -149,10 +149,12 @@ $(document).ready(function(){
 
   hammertime.on("release drag swipe dragdown swipedown", handleHammer);
   $(".resetCards a").click(function(){resetCards()});
-  $(".disagree").on('click',function(e){
-    cardSwipe(-1,0);         
+  $(".disagree").on('click', function(e){
+    cardSwipe(-1,0);
+    e.preventDefault();         
   });
-  $(".agree").click(function(){
-    cardSwipe(1,0);        
+  $(".agree").on('click', function(e){
+    cardSwipe(1,0);
+    e.preventDefault();        
   });
 });
