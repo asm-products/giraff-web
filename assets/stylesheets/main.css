@@ -148,26 +148,6 @@ footer a.fa  {
   text-align: center;
 }
 
-@media(max-width:767px){
-
-  body {
-    text-align: center;
-  }
-
-  #main {
-    padding-top: 20px;
-  }
-
-  #mailing-list {
-    margin-top: 30px;
-  }
-
-  #phone {
-    margin-top: 30px;
-  }
-
-}
-
 .spinner {
   margin: 100px auto;
   width: 50px;
@@ -464,6 +444,7 @@ color: white;
 #social-icons {
   color: #E8B522;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #social-icons a {
@@ -477,5 +458,52 @@ color: white;
 }
 
 #social-icons .list-inline > li {
-  margin: 0 30px;
+  margin: 0 20px;
+}
+
+/* tablet */
+@media(max-width:767px){
+
+    body {
+      text-align: center;
+    }
+
+    #main {
+      padding-top: 20px;
+    }
+
+    #mailing-list {
+      margin-top: 30px;
+    }
+
+    #phone {
+      margin-top: 30px;
+    }
+
+}
+
+/* mobile */
+@media(max-width:340px){
+
+    #thank-you > section {
+      padding-top: 20px;
+    }
+
+    #thanks-text {
+      font-size: 2em;
+      margin: 30px 0;
+    }
+
+    #cheering-minons {
+      margin-bottom: 20px;
+    }
+
+    #thank-you p {
+      font-size: 0.8em;
+    }
+
+    #social-icons {
+      margin-top: 20px;
+    }
+
 }
