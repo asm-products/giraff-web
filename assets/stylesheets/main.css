@@ -255,10 +255,10 @@ footer a.fa  {
 }
 
 @keyframes bouncedelay {
-  0%, 80%, 100% { 
+  0%, 80%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 40% { 
+  } 40% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -266,13 +266,6 @@ footer a.fa  {
 
 /*start slide css*/
   
-/*.phone {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px; }
-*/
-
 .slider-list {
   width: 240px;
   height: 225px;
@@ -344,7 +337,6 @@ color: white;
   width: 45px;
   background-color: rgba(254, 213, 79,1);
   -webkit-transition: background-color 400;
-
 }
 
 
@@ -422,10 +414,47 @@ color: white;
   transition: opacity 1s;
   opacity:1;
 }
-  
-/*#buttonIcon{
-  left: 44px;
-  POSITION: relative;
-  width:420;
-  top:653px;
-}*/
+
+/*THANK YOU PAGE*/
+
+#thank-you {
+  background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
+}
+
+#thank-you > section {
+  padding-top: 100px;
+}
+
+#thank-you p {
+  font-size: 1.5em;
+}
+
+#thanks-text {
+  color: #E8B522;
+  margin: 75px 0;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+#cheering-minons {
+  margin-bottom: 50px;
+}
+
+#social-icons {
+  color: #E8B522;
+  margin-top: 40px;
+}
+
+#social-icons a {
+  color: #E8B522;
+  text-decoration: none;
+}
+
+#social-icons a:hover {
+  color: #E8B522;
+  text-decoration: none;
+}
+
+#social-icons .list-inline > li {
+  margin: 0 30px;
+}
