@@ -24,7 +24,7 @@ body {
 }
 
 #main {
-  padding-top: 150px;
+  padding-top: 100px;
   background: #302b2a url(../images/fun-bk-tile.jpg) repeat-x;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 #mailing-list {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .btn-mailing-list {
@@ -146,26 +146,6 @@ footer a.fa  {
   border:none;
   width:100%;
   text-align: center;
-}
-
-@media(max-width:767px){
-
-  body {
-    text-align: center;
-  }
-
-  #main {
-    padding-top: 20px;
-  }
-
-  #mailing-list {
-    margin-top: 30px;
-  }
-
-  #phone {
-    margin-top: 30px;
-  }
-
 }
 
 .spinner {
@@ -325,9 +305,9 @@ footer a.fa  {
 }
   
 .share .fa, .disagree .fa, .agree .fa {
-line-height: 45px;
-font-size: 20px;
-color: white;
+  line-height: 45px;
+  font-size: 20px;
+  color: white;
 }
 
 .share {
@@ -336,8 +316,7 @@ color: white;
   left: 172px;
   height: 45px;
   width: 45px;
-    display:inline-block;
-
+  display: inline-block;
   -webkit-transition: background-color 400;
 }
 .options{
@@ -438,7 +417,7 @@ color: white;
 }
 
 #thank-you > section {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #thank-you h3 {
@@ -452,18 +431,24 @@ color: white;
 
 #thanks-text {
   color: #E8B522;
-  margin: 75px 0;
+  margin: 40px 0;
   text-transform: uppercase;
   font-size: 3em;
 }
 
 #cheering-minons {
   margin-bottom: 50px;
+  max-width: 400px;
+}
+
+#mc-embedded-subscribe {
+  width: 100%;
 }
 
 #social-icons {
   color: #E8B522;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #social-icons a {
@@ -477,5 +462,74 @@ color: white;
 }
 
 #social-icons .list-inline > li {
-  margin: 0 30px;
+  margin: 0 20px;
 }
+
+/* mobile */
+@media(max-width:440px) {
+
+  #thank-you > section {
+    padding-top: 20px;
+  }
+
+  #thanks-text {
+    font-size: 2em;
+    margin: 30px 0;
+  }
+
+  #cheering-minons {
+    margin-bottom: 20px;
+  }
+
+  #thank-you p {
+    font-size: 0.8em;
+  }
+
+  #social-icons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #mailing-list {
+    margin-top: 0;
+  }
+
+}
+
+/* tablet */
+@media(max-width:767px) {
+
+  body {
+    text-align: center;
+  }
+
+  #main {
+    padding-top: 20px;
+  }
+
+  #mailing-list {
+    margin-top: 30px;
+  }
+
+  #phone {
+    margin-top: 30px;
+  }
+
+  #tagline {
+    font-size: 2em;
+  }
+
+  #mc-embedded-subscribe {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width:977px) {
+
+  #mailing-list {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
