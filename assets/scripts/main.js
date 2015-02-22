@@ -34,8 +34,8 @@ jQuery(function($)
     });
     stack.on("dragstart", function (e)
     {
-        throwOutConfidenceElements.yes = $(".phone__label__fave");
-        throwOutConfidenceElements.no = $(".phone__label__pass");
+        throwOutConfidenceElements.yes = $(".phone__label__fave").stop();
+        throwOutConfidenceElements.no = $(".phone__label__pass").stop();
     });
     stack.on("dragmove", function (e)
     {
@@ -45,8 +45,8 @@ jQuery(function($)
     {
         if (e.throwOutConfidence != 1)
         {
-            throwOutConfidenceElements.yes.css("opacity", 0);
-            throwOutConfidenceElements.no.css("opacity", 0);
+            throwOutConfidenceElements.yes.animate({ "opacity": 0 }, 300);
+            throwOutConfidenceElements.no.animate({ "opacity": 0 }, 300);
         }
     });
 });
