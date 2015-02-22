@@ -21,19 +21,30 @@ body {
   font-family: "Open Sans", Sans-Serif;
   color: #FFF;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#main,
+#thank-you {
+  background: #302b2a url(../images/fun-background-full.png) repeat-x;
 }
 
 #main {
-  padding-top: 150px;
-  background: #302b2a url(../images/fun-bk-tile.jpg) repeat-x;
+  padding-top: 100px;
 }
 
 #logo {
+  position: relative;
+  max-width: 100%;
 }
 
 #tagline {
-  margin-top: 10px;
-  font-size: 2.6em;
+  font-family: 'GothamRounded-Bold', 'Open Sans', sans-serif;
+  margin-top: 30px;
+  font-size: 2.4em;
+}
+h5, #mc-embedded-subscribe {
+  font-family: 'GothamRounded-Bold', 'Open Sans', sans-serif;
 }
 
 .omit {
@@ -42,6 +53,9 @@ body {
 
 #phone {
   background-image: url(../images/phone.png);
+  background-size: contain;
+  border-radius: 36px;
+  overflow: hidden;
   width: 247px;
   height: 499px;
   margin: 0 auto;
@@ -49,6 +63,7 @@ body {
   margin-bottom: 30px;
   overflow: hidden;
   text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
 #phone img {
@@ -68,7 +83,7 @@ body {
 }
 
 #mailing-list {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .btn-mailing-list {
@@ -146,26 +161,6 @@ footer a.fa  {
   border:none;
   width:100%;
   text-align: center;
-}
-
-@media(max-width:767px){
-
-  body {
-    text-align: center;
-  }
-
-  #main {
-    padding-top: 20px;
-  }
-
-  #mailing-list {
-    margin-top: 30px;
-  }
-
-  #phone {
-    margin-top: 30px;
-  }
-
 }
 
 .spinner {
@@ -325,9 +320,9 @@ footer a.fa  {
 }
   
 .share .fa, .disagree .fa, .agree .fa {
-line-height: 45px;
-font-size: 20px;
-color: white;
+  line-height: 45px;
+  font-size: 20px;
+  color: white;
 }
 
 .share {
@@ -336,8 +331,7 @@ color: white;
   left: 172px;
   height: 45px;
   width: 45px;
-    display:inline-block;
-
+  display: inline-block;
   -webkit-transition: background-color 400;
 }
 .options{
@@ -434,11 +428,11 @@ color: white;
 /*THANK YOU PAGE*/
 
 #thank-you {
-  background: #302b2a url(../images/fun-bk-tile.jpg) repeat;
+  background-repeat: repeat;
 }
 
 #thank-you > section {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #thank-you h3 {
@@ -452,18 +446,25 @@ color: white;
 
 #thanks-text {
   color: #E8B522;
-  margin: 75px 0;
+  margin: 40px 0;
   text-transform: uppercase;
   font-size: 3em;
+  font-weight: 900;
 }
 
 #cheering-minons {
   margin-bottom: 50px;
+  max-width: 400px;
+}
+
+#mc-embedded-subscribe {
+  width: 100%;
 }
 
 #social-icons {
   color: #E8B522;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #social-icons a {
@@ -477,5 +478,102 @@ color: white;
 }
 
 #social-icons .list-inline > li {
-  margin: 0 30px;
+  margin: 0 20px;
+}
+
+.landing__phone {
+  background: url("../images/mobile_with_swipe.png") center 0 no-repeat;
+  background-size: contain;
+  margin: 30px 0 40px 0;
+  padding: 45px 10px 0 10px;
+  width: 100%;
+  height: 400px;
+}
+
+@media(max-width:991px) {
+
+  #main {
+    background-repeat: repeat;
+  }
+
+  #mailing-list {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+/* tablet */
+@media(max-width:767px) {
+
+  body {
+    text-align: center;
+  }
+
+  #main {
+    padding-top: 30px;
+  }
+
+  #mailing-list {
+    margin-top: 14px;
+  }
+
+  #phone {
+    margin-top: 30px;
+  }
+
+  #tagline {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #mc-embedded-subscribe {
+    margin-top: 10px;
+  }
+}
+
+/* mobile */
+@media(max-width:440px) {
+
+  #thank-you > section {
+    padding-top: 20px;
+  }
+
+  #thanks-text {
+    font-size: 1.3em;
+    margin: 60px 0;
+  }
+
+  #cheering-minons {
+    margin-bottom: 40px;
+  }
+
+  #thank-you p {
+    font-size: 0.8em;
+  }
+
+  #social-icons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  #email-input {
+    text-align: center;
+  }
+
+  #mailing-list {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #tagline {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    padding: 0 20px 0;
+  }
+
+  .list-inline {
+    margin-bottom: 40px;
+  }
 }
