@@ -38,7 +38,7 @@ jQuery(function($)
         })
       , throwOutConfidenceElements = {}
     ;
-    $(".slider-list .slide").each(function(i, e)
+    $(".slider-list .slide:not(:first-child)").each(function(i, e)
     {
         var card = stack.createCard(this);
         (function(card, e)

@@ -91,6 +91,7 @@ body {
   width: 140px;
   height: 50px;
   z-index: 15;
+  pointer-events: none;
 }
   .phone__label__pass {
     border-color: #000;
@@ -378,6 +379,9 @@ footer a.fa  {
   }
   .slider-list .slide.in-deck {
     opacity: 1.0;
+  }
+  .slider-list .slide:first-child {
+    cursor: default;
   }
     .slider-list .slide .slide-img {
       background-size: cover;
