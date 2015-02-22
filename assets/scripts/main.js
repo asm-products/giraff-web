@@ -28,8 +28,9 @@ jQuery(function($)
     var stack = gajus.Swing.Stack()
       , throwOutConfidenceElements = {}
     ;
-    $("#phone .slider-list .slide").each(function()
+    $(".slider-list .slide").each(function()
     {
+        $(this).addClass("in-deck");
         stack.createCard(this);
     });
     stack.on("dragstart", function (e)
@@ -41,6 +42,10 @@ jQuery(function($)
     {
         throwOutConfidenceElements[e.throwDirection == gajus.Swing.Card.DIRECTION_RIGHT ? "yes" : "no"].css("opacity", e.throwOutConfidence);
     });
+    stack.on("throwout", function (e)
+    {
+        $(e.target).removeClass("in-deck");
+    });
     stack.on("dragend", function (e)
     {
         if (e.throwOutConfidence != 1)
@@ -48,5 +53,20 @@ jQuery(function($)
             throwOutConfidenceElements.yes.animate({ "opacity": 0 }, 300);
             throwOutConfidenceElements.no.animate({ "opacity": 0 }, 300);
         }
+    });
+
+    $(".phone__controls .phone__controls__btn.pass").on("click", function()
+    {
+        $(".phone__label__pass").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
+        var card = stack.getCard($(".slider-list .slide.in-deck:last")[0]);
+        card.throwOut(gajus.Swing.Card.DIRECTION_LEFT, 0);
+        return false;
+    });
+    $(".phone__controls .phone__controls__btn.fave").on("click", function()
+    {
+        $(".phone__label__fave").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
+        var card = stack.getCard($(".slider-list .slide.in-deck:last")[0]);
+        card.throwOut(gajus.Swing.Card.DIRECTION_RIGHT, 0);
+        return false;
     });
 });
