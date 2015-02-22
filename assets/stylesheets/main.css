@@ -390,7 +390,9 @@ footer a.fa  {
     cursor: default;
   }
     .slider-list .slide .slide-img {
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
       height: 194px;
     }
       .slider-list .slide .slide-img span {
@@ -403,6 +405,7 @@ footer a.fa  {
       font-size: 14px;
       padding: 8px 10px;
       text-align: left;
+      white-space: nowrap;
     }
 
 /*THANK YOU PAGE*/
