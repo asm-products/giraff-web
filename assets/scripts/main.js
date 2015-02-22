@@ -24,4 +24,29 @@ jQuery(function($)
             }
         });
     }
+
+    var stack = gajus.Swing.Stack()
+      , throwOutConfidenceElements = {}
+    ;
+    $("#phone .slider-list .slide").each(function()
+    {
+        stack.createCard(this);
+    });
+    stack.on("dragstart", function (e)
+    {
+        throwOutConfidenceElements.yes = $(".phone__label__fave");
+        throwOutConfidenceElements.no = $(".phone__label__pass");
+    });
+    stack.on("dragmove", function (e)
+    {
+        throwOutConfidenceElements[e.throwDirection == gajus.Swing.Card.DIRECTION_RIGHT ? "yes" : "no"].css("opacity", e.throwOutConfidence);
+    });
+    stack.on("dragend", function (e)
+    {
+        if (e.throwOutConfidence != 1)
+        {
+            throwOutConfidenceElements.yes.css("opacity", 0);
+            throwOutConfidenceElements.no.css("opacity", 0);
+        }
+    });
 });
