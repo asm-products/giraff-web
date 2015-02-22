@@ -184,7 +184,11 @@ body {
 footer {
   margin-top: 2em;
   color: #8d8481;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+footer .assembly {
+  padding-left: 14px;
 }
 
 footer a {
@@ -194,15 +198,17 @@ footer a {
 
 footer a:hover {
   color: #8d8481;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 footer a.fa  {
   color: #2a2625;
   background-color: #8d8481;
   border-radius: 50%;
+  font-size: 18px;
   padding: 5px;
-  width: 35px;
+  line-height: 22px;
+  width: 30px;
   height: 30px;
   margin: 0px auto;
 }
@@ -464,6 +470,13 @@ footer a.fa  {
   height: 400px;
 }
 
+@media(max-width:1199px) {
+
+  #mailing-list {
+    margin-top: 50px;
+  }
+}
+
 @media(max-width:991px) {
 
   #main {
@@ -472,7 +485,7 @@ footer a.fa  {
 
   #mailing-list {
     overflow: hidden;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 40px;
   }
 }
