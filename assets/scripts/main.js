@@ -25,7 +25,17 @@ jQuery(function($)
         });
     }
 
-    var stack = gajus.Swing.Stack()
+    var stack = gajus.Swing.Stack(
+        {
+            "throwOutConfidence": function(offset, element)
+            {
+                return Math.min(Math.abs(offset) / (element.offsetWidth / 3.0), 1);
+            },
+            "throwOutDistance": function()
+            {
+                return 250;
+            }
+        })
       , throwOutConfidenceElements = {}
     ;
     $(".slider-list .slide").each(function()
@@ -57,16 +67,22 @@ jQuery(function($)
 
     $(".phone__controls .phone__controls__btn.pass").on("click", function()
     {
-        $(".phone__label__pass").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
         var card = stack.getCard($(".slider-list .slide.in-deck:last")[0]);
-        card.throwOut(gajus.Swing.Card.DIRECTION_LEFT, 0);
+        if (card)
+        {
+            $(".phone__label__pass").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
+            card.throwOut(gajus.Swing.Card.DIRECTION_LEFT, 0);
+        }
         return false;
     });
     $(".phone__controls .phone__controls__btn.fave").on("click", function()
     {
-        $(".phone__label__fave").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
         var card = stack.getCard($(".slider-list .slide.in-deck:last")[0]);
-        card.throwOut(gajus.Swing.Card.DIRECTION_RIGHT, 0);
+        if (card)
+        {
+            $(".phone__label__fave").css("opacity", 1.0).animate({ "opacity": 0 }, 900);
+            card.throwOut(gajus.Swing.Card.DIRECTION_RIGHT, 0);
+        }
         return false;
     });
 });
