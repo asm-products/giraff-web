@@ -353,9 +353,12 @@ footer a.fa  {
   width: 212px;
 }
   .slider-list .slide {
+    background: #fff;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #000;
     cursor: move;
+    font-family: "GothamRounded-Bold", "Open Sans", sans-serif;
     overflow: hidden;
     margin: 8px;
     position: absolute;
@@ -368,6 +371,10 @@ footer a.fa  {
       background-size: cover;
       height: 194px;
     }
+      .slider-list .slide .slide-img span {
+        display: block;
+        padding: 70px 10px 0;
+      }
     .slider-list .slide .slide-title {
       background: #fff;
       color: #000;
