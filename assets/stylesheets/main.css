@@ -99,6 +99,14 @@ body {
   .phone__label__fave {
   }
 
+.phone__tip {
+  color: #FED54F;
+  font-family: "GothamRounded-Bold", "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: -70px;
+  padding: 0 80px 20px;
+  text-align: center;
+}
 .phone__controls {
   color: #fff;
   font-size: 20px;
