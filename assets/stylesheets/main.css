@@ -359,6 +359,7 @@ footer a.fa  {
     color: #000;
     cursor: move;
     font-family: "GothamRounded-Bold", "Open Sans", sans-serif;
+    opacity: 0;
     overflow: hidden;
     margin: 8px;
     position: absolute;
@@ -366,6 +367,9 @@ footer a.fa  {
     top: 0;
     width: 197px;
     z-index: 10;
+  }
+  .slider-list .slide.in-deck {
+    opacity: 1.0;
   }
     .slider-list .slide .slide-img {
       background-size: cover;

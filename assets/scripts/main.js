@@ -38,10 +38,19 @@ jQuery(function($)
         })
       , throwOutConfidenceElements = {}
     ;
-    $(".slider-list .slide").each(function()
+    $(".slider-list .slide").each(function(i, e)
     {
-        $(this).addClass("in-deck");
-        stack.createCard(this);
+        var card = stack.createCard(this);
+        (function(card, e)
+        {
+            setTimeout(function()
+            {
+                card.throwIn(0, 200);
+                $(e).addClass("in-deck");
+            }
+            , i * 100);
+        }
+        )(card, e);
     });
     stack.on("dragstart", function (e)
     {
