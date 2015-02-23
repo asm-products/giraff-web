@@ -387,7 +387,7 @@ footer a.fa  {
     opacity: 1.0;
   }
   .slider-list .slide:first-child {
-    cursor: default;
+    cursor: pointer;
   }
     .slider-list .slide .slide-img {
       background-size: contain;

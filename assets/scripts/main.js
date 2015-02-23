@@ -25,6 +25,12 @@ jQuery(function($)
         });
     }
 
+    $(".slider-list li:first-child").on("click", function()
+    {
+        $(".focus_me_please").effect("highlight").focus();
+        return false;
+    });
+
     var stack = gajus.Swing.Stack(
         {
             "throwOutConfidence": function(offset, element)
