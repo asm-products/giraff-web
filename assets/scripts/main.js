@@ -31,6 +31,15 @@ jQuery(function($)
         return false;
     });
 
+    function playCurrentCardVideo()
+    {
+        var lastCardVideo = $(".slider-list .slide.in-deck:last video");
+        if (lastCardVideo.length)
+        {
+            lastCardVideo[0].play();
+        }
+    }
+
     var stack = gajus.Swing.Stack(
         {
             "throwOutConfidence": function(offset, element)
@@ -58,6 +67,7 @@ jQuery(function($)
         }
         )(card, e);
     });
+    $(".slider-list .slide:last video")[0].play();
     stack.on("dragstart", function (e)
     {
         throwOutConfidenceElements.yes = $(".phone__label__fave").stop();
@@ -70,6 +80,7 @@ jQuery(function($)
     stack.on("throwout", function (e)
     {
         $(e.target).removeClass("in-deck");
+        playCurrentCardVideo();
     });
     stack.on("dragend", function (e)
     {

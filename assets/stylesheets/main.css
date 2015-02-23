@@ -399,6 +399,10 @@ footer a.fa  {
         display: block;
         padding: 70px 10px 0;
       }
+      .slider-list .slide .slide-img video {
+        width: 100%;
+        height: 100%;
+      }
     .slider-list .slide .slide-title {
       background: #fff;
       color: #000;
