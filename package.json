@@ -9,6 +9,7 @@
   "dependencies": {
     "coffee-script": "^1.9.1",
     "gulp": "^3.8.11",
-    "gulp-imagemin": "^2.2.0"
+    "gulp-imagemin": "^2.2.0",
+    "imagemin-pngquant": "^4.0.0"
   }
 }
