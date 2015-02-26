@@ -7,7 +7,7 @@ jQuery(function($)
     {
         $.ajax(
         {
-            url: ENDPOINT + hash.substr(1) + ".json",
+            url: API_ENDPOINT + hash.substr(1) + ".json",
             type: "get",
             error: function()
             {
