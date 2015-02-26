@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body_attr %} class="page__thank-you"{% endblock %}
+
+{% block body %}
+<section class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 col-md-12">
+        <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Fun logo" />
+      </div>
+      <div class="col-xs-12">
+        <h3 id="thanks-text">Thanks for signing up!</h3>
+        <img id="cheering-minons" src="{{ url_for('static', filename='images/cheering-minions.gif') }}" alt="Cheering Minons" width="100%" />
+        <p>We promise you a lot of fun coming soon :)</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="social-icons">
+  <nav class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="list-inline">
+          <li><a href="#" class="fa fa-twitter fa-2x"></a></li>
+          <li><a href="#" class="fa fa-facebook fa-2x"></a></li>
+          <li><a href="#" class="fa fa-google-plus fa-2x"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+{% endblock %}
