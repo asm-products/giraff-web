@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block container %}
+<div class="row">
+    <div class="col-md-5 col-md-push-6">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 col-md-12">
+                <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Fun logo" />
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-12">
+                <p id="tagline">Tinder for the best gifs in the <span style="text-decoration: line-through;">world</span> galaxy.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="mailing-list">
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//assembly.us10.list-manage.com/subscribe/post?u=608c78fb2081068a03b335c80&amp;id=c435774c15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div class="col-xs-12"><h5>Get notified when we launch</h5></div>
+
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_608c78fb2081068a03b335c80_c435774c15" tabindex="-1" value=""></div>
+                        <div class="form-group" id="mc_embed_signup_scroll">
+                            <div class="col-sm-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <input id="email-input" placeholder="Email address" type="email" value="" name="EMAIL" class="email form-control focus_me_please" id="mce-EMAIL" required>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-mailing-list">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-md-offset-2 col-md-pull-5 col-xs-8 col-xs-offset-2">
+
+        <div class="landing__phone visible-xs"></div>
+
+        <div class="phone__tip hidden-sm hidden-xs">swipe left to pass or right to fave</div>
+        <div id="phone" class="slider hidden-xs">
+            <div class="phone-frame">
+                <ol class="slider-list">
+                    <li class="slide in-deck">
+                        <div class="slide-img"><span>Want to see more? Sign up to get notified when we launch &rarr;</span></div>
+                        <div class="slide-title">SUBSCRIBE!</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/ZH4lsDX.webm" loop></video></div>
+                        <div class="slide-title">PARROT FAIL</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/P7OqM5Z.webm" loop></video></div>
+                        <div class="slide-title">I'M OK</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/QtDj2b5.webm" loop></video></div>
+                        <div class="slide-title">BRAVE DOG & HORSE</div>
+                    </li>
+
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/XEX6LLZ.webm" loop></video></div>
+                        <div class="slide-title">LET ME SAVE YOU!</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/lxXk46g.webm" loop></video></div>
+                        <div class="slide-title">Good guy cockatoo</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/lGxKLnX.webm" loop></video></div>
+                        <div class="slide-title">Exit! Stage left.</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/XQ1AM07.webm" loop></video></div>
+                        <div class="slide-title">Plummeting</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/BSlbNKk.webm" loop></video></div>
+                        <div class="slide-title">You're home!!</div>
+                    </li>
+
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/hz1Jwh0.webm" loop></video></div>
+                        <div class="slide-title">Face penguin faceplants</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/rnKqnGL.webm" loop></video></div>
+                        <div class="slide-title">I'm in the big screen</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/XxhiFRY.webm" loop></video></div>
+                        <div class="slide-title">I can show you the world</div>
+                    </li>
+                    <li class="slide">
+                        <div class="slide-img"><video src="http://i.imgur.com/PykyTS0.webm" loop></video></div>
+                        <div class="slide-title">Limbo game is strong</div>
+                    </li>
+                </ol>
+                <div class="phone__controls">
+                    <a href="#" class="phone__controls__btn pass"><i class="fa fa-times"></i></a>
+                    <a href="#" class="phone__controls__btn share"><i class="fa fa-share-alt"></i></a>
+                    <a href="#" class="phone__controls__btn fave"><i class="fa fa-star"></i></a>
+                </div>
+                <div class="phone__label phone__label__pass">NOPE</div>
+                <div class="phone__label phone__label__fave">FAVED</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tinder for the best gifs on earth">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fun</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}" media="screen" charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/vendor/swing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script async src="//assets.helpful.io/assets/widget.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body{% block body_attr %}{% endblock %}>
+{% block body %}
+<section id="main">
+    <div class="container">
+        {% block container %}{% endblock %}
+    </div>
+</section>
+<footer>
+    <nav class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 text-center">
+                <ul class="list-inline">
+                    <li><a class="assembly" href="https://assembly.com/giraff">Built with &hearts; on Assembly</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-inline">
+                    <li><a href="fun@helpful.io" data-helpful="fun" data-helpful-modal="on">Contact Us</a></li>
+                    {# <li><a href="#">Terms of use</a></li> #}
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-inline">
+                    <li><a href="https://twitter.com/choosefunapp" target="_blank" class="fa fa-twitter fa-lg"></a></li>
+                    <li><a href="https://www.facebook.com/choosefunapp" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+{% endblock %}
+{% include "ga.html" %}
+</body>
+</html>
+
