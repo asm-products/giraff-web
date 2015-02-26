@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
+{% block head %}
+<link rel="image_src" href="{{ data.original_source }}">
+<meta property="og:image" content="{{ data.original_source }}">
+<meta property="og:title" content="{{ data.name }}">
+<meta property="og:url" content="{{ base_url }}">
+<meta property="og:description" content="Tinder for the best gifs in the galaxy.">
+<meta name="twitter:card" content="player" />
+<meta name="twitter:site" content="@choosefunapp" />
+<meta name="twitter:title" content="{{ data.name }}" />
+<meta name="twitter:image" content="{{ data.original_source }}" />
+<meta name="twitter:url" content="{{ base_url }}" />
+{% endblock %}
+
 {% block body %}
 <section id="shortcode">
   <div class="container">

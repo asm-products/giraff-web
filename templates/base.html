@@ -14,6 +14,7 @@
     <script src="{{ url_for('static', filename='scripts/vendor/swing.min.js') }}"></script>
     <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
     <script async src="//assets.helpful.io/assets/widget.js"></script>
+    {% block head %}{% endblock %}
 </head>
 <body{% block body_attr %}{% endblock %}>
 {% block body %}

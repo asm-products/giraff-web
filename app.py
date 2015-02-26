@@ -27,7 +27,8 @@ def view(shortcode):
     data = requests.get(api_url).json()
     if not data:
         return redirect("/")
-    return render_template("view.html", shortcode=shortcode, data=data, host_url=request.host_url)
+    return render_template("view.html", shortcode=shortcode, data=data,
+                           base_url=request.base_url, host_url=request.host_url)
 
 @app.route("/thank-you.html")
 def thank_you():
