@@ -47,7 +47,7 @@
               <div class="shortcode-image">
                 <div class="image-view">
                     {% if data %}
-                    <video autoplay loop muted>
+                    <video autoplay loop muted style="width: 100%;">
                         <source type="video/webm" src="//i.imgur.com/{{ data.shortcode }}.webm">
                         <source type="video/mp4" src="//i.imgur.com/{{ data.shortcode }}.mp4">
                     </video>
@@ -59,7 +59,7 @@
               {% if data %}
               <div class="shortcode-link" onclick="this.focus();this.select();">
                 <h4>Share: </h4>
-                <textarea id="image-share-link" onclick="this.focus();this.select();" readonly="readonly">{{ host_url }}v/{{ data.shortcode }}</textarea>
+                <textarea id="image-share-link" onclick="this.focus();this.select();" readonly="readonly" rows="1">{{ host_url }}v/{{ data.shortcode }}</textarea>
               </div>
               {% endif %}
             </div>
@@ -84,6 +84,7 @@
                     </div>
                   </form>
                 </div>
+                <br><br><br><br>
                 <!--End mc_embed_signup-->
             </div>
           </div>
