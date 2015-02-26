@@ -25,7 +25,7 @@ body {
 }
 
 #main,
-#thank-you {
+.page__thank-you {
   background: #302b2a url(../images/fun-background-full.png) repeat-x;
 }
 
@@ -414,19 +414,19 @@ footer a.fa  {
 
 /*THANK YOU PAGE*/
 
-#thank-you {
+.page__thank-you {
   background-repeat: repeat;
 }
 
-#thank-you > section {
+.page__thank-you > section {
   padding-top: 60px;
 }
 
-#thank-you h3 {
+.page__thank-you h3 {
   font-family: 'Montserrat-Bold', 'Open Sans', sans-serif;
 }
 
-#thank-you p {
+.page__thank-you p {
   font-size: 1.5em;
   font-family: 'Montserrat-Regular', 'Open Sans', sans-serif;
 }
@@ -530,7 +530,7 @@ footer a.fa  {
 /* mobile */
 @media(max-width:440px) {
 
-  #thank-you > section {
+  .page__thank-you > section {
     padding-top: 20px;
   }
 
@@ -543,7 +543,7 @@ footer a.fa  {
     margin-bottom: 40px;
   }
 
-  #thank-you p {
+  .page__thank-you p {
     font-size: 0.8em;
   }
 
