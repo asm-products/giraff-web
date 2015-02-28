@@ -6,6 +6,7 @@ eventlet.monkey_patch()
 import os
 import requests
 from whitenoise import WhiteNoise
+from flask.ext.mobility import Mobility
 from flask import Flask, render_template, request, redirect
 
 
@@ -14,6 +15,7 @@ API_ENDPOINT = os.getenv("API_ENDPOINT", "http://fun-api.herokuapp.com/shortcode
 
 
 app = Flask(__name__, instance_relative_config=True)
+Mobility(app)
 app.wsgi_app = WhiteNoise(app.wsgi_app, root=os.path.join(BASE_DIR, "assets"), prefix="static/")
 
 

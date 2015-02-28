@@ -47,10 +47,14 @@
               <div class="shortcode-image">
                 <div class="image-view">
                     {% if data %}
-                    <video autoplay loop muted style="width: 100%;">
-                        <source type="video/webm" src="//i.imgur.com/{{ data.shortcode }}.webm">
-                        <source type="video/mp4" src="//i.imgur.com/{{ data.shortcode }}.mp4">
-                    </video>
+                        {% if not request.MOBILE %}
+                            <video autoplay loop muted style="width: 100%;">
+                                <source type="video/webm" src="//i.imgur.com/{{ data.shortcode }}.webm">
+                                <source type="video/mp4" src="//i.imgur.com/{{ data.shortcode }}.mp4">
+                            </video>
+                        {% else %}
+                            <img src="//i.imgur.com/{{ data.shortcode }}.gif" style="width: 100%;">
+                        {% endif %}
                     {% else %}
                         <h1>404</h1>
                     {% endif %}
