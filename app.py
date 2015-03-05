@@ -7,7 +7,7 @@ import os
 import requests
 from whitenoise import WhiteNoise
 from flask.ext.mobility import Mobility
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 
 
 BASE_DIR = os.path.dirname(__file__)
@@ -27,9 +27,16 @@ def index():
 def view(shortcode):
     api_url = "%(API_ENDPOINT)s%(shortcode)s.json" % { "API_ENDPOINT": API_ENDPOINT, "shortcode": shortcode }
     data = requests.get(api_url).json()
+    f = request.args.get("f") # format (video/gif)
     if not data:
         return redirect("/")
-    return render_template("view.html", shortcode=shortcode, data=data,
+    if not f:
+        if request.MOBILE:
+            return redirect("%s?f=gif" % url_for("view", shortcode=shortcode))
+        else:
+            f = "video"
+    return render_template("view.html",
+                           shortcode=shortcode, data=data, f=f,
                            base_url=request.base_url, host_url=request.host_url)
 
 @app.route("/thank-you.html")

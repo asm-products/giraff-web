@@ -232,6 +232,19 @@ footer a.fa  {
   width:100%;
 }
 
+.image-view video {
+  display: block;
+}
+
+.shortcode-image .switch {
+  border-bottom: 1px solid #555;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  margin: 10px 0 6px;
+  text-decoration: none;
+}
+
 #shortcode textarea{
   background-color: #302b2a;
   border:none;
