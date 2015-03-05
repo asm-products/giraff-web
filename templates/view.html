@@ -46,14 +46,20 @@
             <div class="shortcode-image-container">
               <div class="shortcode-image">
                 <div class="image-view">
-                    {% if data %}
-                    <video autoplay loop muted style="width: 100%;">
+                  {% if data %}
+                    {% if f == "video" %}
+                      <video autoplay loop muted style="width: 100%;">
                         <source type="video/webm" src="//i.imgur.com/{{ data.shortcode }}.webm">
                         <source type="video/mp4" src="//i.imgur.com/{{ data.shortcode }}.mp4">
-                    </video>
+                      </video>
+                      <div class="text-center"><a href="{{ url_for("view", shortcode=shortcode) }}?f=gif" class="switch"><i class="glyphicon glyphicon-refresh"></i> switch to gif</a></div>
                     {% else %}
-                        <h1>404</h1>
+                      <img src="//i.imgur.com/{{ data.shortcode }}.gif" style="width: 100%;">
+                      <div class="text-center"><a href="{{ url_for("view", shortcode=shortcode) }}?f=video" class="switch"><i class="glyphicon glyphicon-refresh"></i> switch to video</a></div>
                     {% endif %}
+                  {% else %}
+                    <h1>404</h1>
+                  {% endif %}
                 </div>
               </div>
               {% if data %}

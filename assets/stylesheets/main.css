@@ -219,24 +219,30 @@ footer a.fa  {
   text-align: center;
 }
 
-#shortcode .logo{
-  padding-top: 3em;
+#shortcode .logo {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 
-#shortcode .logo img{
-  height:75px;
-}
-
-#shortcode .shortcode-image-container{
-  padding:1.5em 1em;
+#shortcode .logo img {
+  height: 60px;
 }
 
 #shortcode .shortcode-image img{
   width:100%;
 }
 
-#shortcode .shortcode-image{
-  padding: 1em;
+.image-view video {
+  display: block;
+}
+
+.shortcode-image .switch {
+  border-bottom: 1px solid #555;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  margin: 10px 0 6px;
+  text-decoration: none;
 }
 
 #shortcode textarea{
@@ -569,5 +575,17 @@ footer a.fa  {
 
   .list-inline {
     margin-bottom: 40px;
+  }
+
+  #shortcode .logo {
+      padding-bottom: 1em;
+  }
+
+  #shortcode .logo img {
+    height: 30px;
+  }
+
+  #shortcode h3 {
+    font-size: 14px;
   }
 }
