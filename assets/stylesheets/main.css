@@ -29,6 +29,10 @@ body {
   background: #302b2a url(../images/fun-background-full.png) repeat-x;
 }
 
+.page__terms {
+  background: #302b2a url(../images/fun-background-full.png) repeat-x;
+}
+
 #main {
   padding-top: 100px;
 }
@@ -417,6 +421,22 @@ footer a.fa  {
       text-align: left;
       white-space: nowrap;
     }
+
+
+/*TERMS PAGE*/
+
+.page__terms {
+  background-repeat: repeat;
+}
+
+.page__terms h3 {
+  font-family: 'Montserrat-Bold', 'Open Sans', sans-serif;
+}
+
+.page__terms p {
+  font-family: 'Montserrat-Regular', 'Open Sans', sans-serif;
+}
+
 
 /*THANK YOU PAGE*/
 

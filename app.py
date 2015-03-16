@@ -43,4 +43,8 @@ def view(shortcode):
 def thank_you():
     return render_template("thank-you.html")
 
+@app.route("/terms.html")
+def terms():
+    return render_template("terms.html")
+
 
