@@ -47,4 +47,9 @@ def thank_you():
 def terms():
     return render_template("terms.html")
 
+@app.route("/dmca.html")
+def dmca():
+    return render_template("dmca.html")
+
+
 
