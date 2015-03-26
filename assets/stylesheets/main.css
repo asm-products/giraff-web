@@ -160,7 +160,7 @@ body {
 }
 
 #mailing-list {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .btn-mailing-list {
@@ -604,4 +604,24 @@ footer a.fa  {
   #shortcode h3 {
     font-size: 14px;
   }
+}
+
+/* Upload .gif */
+label.fileUpload input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+.fileUpload {
+  border: 2px solid #FED54F;
+  border-radius: 5px;
+  color: #FED54F;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 8px 18px;
+  display: inline-block;
+  position: relative;
+}
+.fileUpload:hover {
+  background: #FED54F;
+  color: #333;
 }

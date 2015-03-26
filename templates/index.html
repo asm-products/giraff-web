@@ -9,6 +9,25 @@
             </div>
             <div class="col-xs-12 col-sm-8 col-md-12">
                 <p id="tagline">Tinder for the best gifs in the <span style="text-decoration: line-through;">world</span> galaxy.</p>
+                <form action="" id="fileUploadForm" method="post" enctype="multipart/form-data">
+                    <label class="fileUpload">
+                        <input type="file" name="file" id="fileUpload" required="required">
+                        <span>Upload GIFs</span>
+                    </label>
+                    {% if request.args.get("uploaded") %}
+                        {% if request.args.get("uploaded") == "yes" %}
+                        <span>&nbsp;&nbsp;&nbsp;GIF uploaded. Wohoo! One more?</span>
+                        {% else %}
+                        <span>&nbsp;&nbsp;&nbsp;Error #873284 occurred. Retry?<br><small>HINT: you can upload only .gif files</small></span>
+                        {% endif %}
+                    {% endif %}
+                </form>
+                <script>
+                document.getElementById("fileUpload").onchange = function()
+                {
+                    document.getElementById("fileUploadForm").submit();
+                };
+                </script>
             </div>
         </div>
 

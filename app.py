@@ -4,6 +4,7 @@ eventlet.monkey_patch()
 
 
 import os
+import base64
 import requests
 from whitenoise import WhiteNoise
 from flask.ext.mobility import Mobility
@@ -19,8 +20,33 @@ Mobility(app)
 app.wsgi_app = WhiteNoise(app.wsgi_app, root=os.path.join(BASE_DIR, "assets"), prefix="static/")
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
+    if request.method == "POST":
+        file_obj = request.files["file"]
+        if file_obj and file_obj.mimetype in ["image/gif"]:
+            # upload process
+            file_data = file_obj.stream.read()
+            b64_data = base64.b64encode(file_data)
+            payload = \
+            {
+                "image":
+                {
+                    "name": "dunno",
+                    "original_source": "dunno",
+                    "bytes": len(file_data),
+                    "shortcode":"dunno",
+                    "file":
+                    {
+                        "filename": file_obj.filename,
+                        "content": b64_data,
+                        "content_type": file_obj.mimetype
+                    }
+                }
+            }
+            requests.post(API_ENDPOINT, data=payload)
+            return redirect("/?uploaded=yes")
+        return redirect("/?uploaded=no")
     return render_template("index.html")
 
 @app.route("/v/<shortcode>")
