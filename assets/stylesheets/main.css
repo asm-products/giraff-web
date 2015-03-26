@@ -25,7 +25,7 @@ body {
 }
 
 #main,
-.page__thank-you {
+.page__thank-you, .page__terms, .page__dmca {
   background: #302b2a url(../images/fun-background-full.png) repeat-x;
 }
 
@@ -417,6 +417,22 @@ footer a.fa  {
       text-align: left;
       white-space: nowrap;
     }
+
+
+/*TERMS PAGE*/
+
+.page__terms, .page__dmca {
+  background-repeat: repeat;
+}
+
+.page__terms h3, .page__dmca h3 {
+  font-family: 'Montserrat-Bold', 'Open Sans', sans-serif;
+}
+
+.page__terms p, .page__dmca p {
+  font-family: 'Montserrat-Regular', 'Open Sans', sans-serif;
+}
+
 
 /*THANK YOU PAGE*/
 

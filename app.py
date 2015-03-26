@@ -69,4 +69,13 @@ def view(shortcode):
 def thank_you():
     return render_template("thank-you.html")
 
+@app.route("/terms.html")
+def terms():
+    return render_template("terms.html")
+
+@app.route("/dmca.html")
+def dmca():
+    return render_template("dmca.html")
+
+
 
