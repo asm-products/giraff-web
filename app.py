@@ -44,7 +44,7 @@ def index():
                     }
                 }
             }
-            requests.post(API_ENDPOINT, data=payload)
+            requests.post("%(API_ENDPOINT)s/images/create", data=payload)
             return redirect("/?uploaded=yes")
         return redirect("/?uploaded=no")
     return render_template("index.html")
@@ -76,6 +76,3 @@ def terms():
 @app.route("/dmca.html")
 def dmca():
     return render_template("dmca.html")
-
-
-
