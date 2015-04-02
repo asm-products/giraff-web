@@ -7,13 +7,8 @@
 <meta property="og:url" content="{{ base_url }}">
 <meta property="og:description" content="Tinder for the best gifs in the galaxy.">
 <meta property="og:type" content="video.other" />
-<meta property="og:video"             content="http://s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/{{ data.shortcode }}.mp4&imgur_width=550&imgur_height=309&imgur_url=http://imgur.com/{{ data.shortcode }}" />
-<meta property="og:video:secure_url"  content="https://s.imgur.com/include/flash/gifplayer.swf?imgur_video=https://i.imgur.com/{{ data.shortcode }}.mp4&imgur_width=550&imgur_height=309&imgur_url=http://imgur.com/{{ data.shortcode }}" />
-<meta property="og:video:type"        content="application/x-shockwave-flash" />
-<meta property="og:video:width"       content="500" />
-<meta property="og:video:height"      content="281" />
-<meta property="og:video"             content="http://i.imgur.com/{{ data.shortcode }}.mp4" />
-<meta property="og:video:secure_url"  content="https://i.imgur.com/{{ data.shortcode }}.mp4" />
+<meta property="og:video"             content="http://d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.mp4" />
+<meta property="og:video:secure_url"  content="https://d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.mp4" />
 <meta property="og:video:type"        content="video/mp4" />
 <meta property="og:video:width"       content="500" />
 <meta property="og:video:height"      content="281" />
@@ -22,11 +17,11 @@
 <meta name="twitter:title" content="{{ data.name }}" />
 <meta name="twitter:image" content="{{ data.original_source }}" />
 <meta name="twitter:url" content="{{ base_url }}" />
-<meta name="twitter:player"                     content="https://i.imgur.com/{{ data.shortcode }}.gifv" />
+<!-- <meta name="twitter:player"                     content="https://d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.gifv" />
 <meta name="twitter:player:width"               content="550" />
 <meta name="twitter:player:height"              content="309" />
-<meta name="twitter:player:stream"              content="https://i.imgur.com/{{ data.shortcode }}.mp4" />
-<meta name="twitter:player:stream:content_type" content="video/mp4">
+<meta name="twitter:player:stream"              content="https://d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.mp4" />
+<meta name="twitter:player:stream:content_type" content="video/mp4"> -->
 {% endblock %}
 
 {% block body %}
@@ -49,12 +44,11 @@
                   {% if data %}
                     {% if f == "video" %}
                       <video autoplay loop muted style="width: 100%;">
-                        <source type="video/webm" src="//i.imgur.com/{{ data.shortcode }}.webm">
-                        <source type="video/mp4" src="//i.imgur.com/{{ data.shortcode }}.mp4">
+                        <source type="video/mp4" src="//d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.mp4">
                       </video>
                       <div class="text-center"><a href="{{ url_for("view", shortcode=shortcode) }}?f=gif" class="switch"><i class="glyphicon glyphicon-refresh"></i> switch to gif</a></div>
                     {% else %}
-                      <img src="//i.imgur.com/{{ data.shortcode }}.gif" style="width: 100%;">
+                      <img src="//d3v8ph4a49itze.cloudfront.net/{{ data.shortcode }}.gif" style="width: 100%;">
                       <div class="text-center"><a href="{{ url_for("view", shortcode=shortcode) }}?f=video" class="switch"><i class="glyphicon glyphicon-refresh"></i> switch to video</a></div>
                     {% endif %}
                   {% else %}
