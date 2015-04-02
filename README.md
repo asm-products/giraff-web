@@ -8,7 +8,7 @@ This is a product being built by the Assembly community. You can help push this 
 
 ### Getting started
 
-Before opening the `index.html` file, run `bower install`.
+Before opening the `index.html` file, run `npm install`.
 
 ### How Assembly Works
 
