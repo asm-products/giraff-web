@@ -44,7 +44,7 @@ def index():
                     }
                 }
             }
-            requests.post("%(API_ENDPOINT)s/images/create", data=payload)
+            requests.post("http://fun-api.herokuapp.com/images/create", data=payload)
             return redirect("/?uploaded=yes")
         return redirect("/?uploaded=no")
     return render_template("index.html")
