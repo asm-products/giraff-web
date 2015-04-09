@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-import eventlet
-eventlet.monkey_patch()
-
-
 import os
 import base64
 import requests
@@ -76,3 +72,6 @@ def terms():
 @app.route("/dmca.html")
 def dmca():
     return render_template("dmca.html")
+
+if __name__ == "__main__":
+    app.run()
