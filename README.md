@@ -8,7 +8,33 @@ This is a product being built by the Assembly community. You can help push this 
 
 ### Getting started
 
-Before opening the `index.html` file, run `bower install`.
+* Install `Python` dependencies:
+
+`$ pip install -r requirements.txt`
+
+* Install Procfile-based applications management utility:
+
+`$ pip install honcho`
+
+* Serve the application
+
+`$ honcho start`
+
+Then open `localhost:5000` in browser.
+
+##### To recompress graphic assets:
+
+* Install `gulp` globally:
+
+`$ npm install -g gulp`
+
+* Install `npm` dependencies
+
+`$ npm install`
+
+* Run build pipeline
+
+`$ gulp`
 
 ### How Assembly Works
 
