@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block container %}
+<header class="text-center">
+    <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Fun logo" />
+</header>
+<div class="upload-drop-zone">
+    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+    <span>Upload here your .GIF or .GIFV file</span>
+</div>
+<div class="upload-drop-zone">
+    <span>Or enter a GIF URL</span>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <button type="button" class="btn btn-upload btn-block">Upload gif</button>
+    </div>
+</div>
+{% endblock %}
+

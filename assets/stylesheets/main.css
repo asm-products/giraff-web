@@ -625,3 +625,32 @@ label.fileUpload input[type="file"] {
   background: #FED54F;
   color: #333;
 }
+
+/* Upload */
+
+.upload-drop-zone {
+  border-color:  lightgrey;
+  border-style: dashed;
+  margin: 1em 0;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.upload-drop-zone span {
+  color: #FED54F;
+  display: block;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+.upload-drop-zone .glyphicon {
+  font-size: 4em ;
+}
+
+.btn-upload {
+  background-color:#FED54F;
+  border-radius: 0;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
