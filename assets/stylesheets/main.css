@@ -628,7 +628,7 @@ label.fileUpload input[type="file"] {
 
 /* Upload */
 
-.upload-drop-zone {
+.upload-zone {
   border-color:  lightgrey;
   border-style: dashed;
   margin: 1em 0;
@@ -636,15 +636,48 @@ label.fileUpload input[type="file"] {
   text-align: center;
 }
 
-.upload-drop-zone span {
+.upload-zone span {
   color: #FED54F;
   display: block;
   font-weight: bold;
   margin: 0.5em;
 }
 
-.upload-drop-zone .glyphicon {
+.upload-zone .glyphicon {
   font-size: 4em ;
+}
+
+.upload-zone input {
+  background-color: #302b2a;
+  border: none;
+  color: #FED54F;
+  font-weight: bold;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.upload-zone ::-webkit-input-placeholder {
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone :-moz-placeholder { /* Firefox 18- */
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone ::-moz-placeholder {  /* Firefox 19+ */
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone :-ms-input-placeholder {
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
 }
 
 .btn-upload {
@@ -653,4 +686,9 @@ label.fileUpload input[type="file"] {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.upload-file input[type="file"] {
+  position: fixed;
+  top: -1000px;
 }

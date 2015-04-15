@@ -4,17 +4,22 @@
 <header class="text-center">
     <img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Fun logo" />
 </header>
-<div class="upload-drop-zone">
-    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
-    <span>Upload here your .GIF or .GIFV file</span>
-</div>
-<div class="upload-drop-zone">
-    <span>Or enter a GIF URL</span>
-</div>
-<div class="row">
-    <div class="col-xs-12">
-        <button type="button" class="btn btn-upload btn-block">Upload gif</button>
+<form id="upload-form" action="" method="post" enctype="multipart/form-data">
+    <div class="upload-zone" id="upload-zone">
+        <label for="upload-file" class="upload-file">
+            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+            <span>Upload here your .GIF or .GIFV file</span>
+            <input id="upload-file" type="file" name="file">
+        </label>
     </div>
-</div>
+    <div class="upload-zone">
+        <input type="text" placeholder="Or enter a GIF URL" />
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <button id="upload-button" type="button" class="btn btn-upload btn-block">Upload gif</button>
+        </div>
+    </div>
+</form>
+<script src="{{ url_for('static', filename='scripts/uploader.js') }}"></script>
 {% endblock %}
-

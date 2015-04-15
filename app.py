@@ -75,7 +75,7 @@ def dmca():
 
 @app.route("/upload.html")
 def upload():
-     return render_template("upload.html")
+    return render_template("upload.html")
 
 if __name__ == "__main__":
     app.run()
