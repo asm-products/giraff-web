@@ -81,10 +81,17 @@ jQuery(function($) {
             url: 'http://fun-api.herokuapp.com/images',
             method: 'POST',
             data: imageRequest,
-            success: function(data) {
-                console.log(data);
+            success: function() {
+                onResponse('Gif uploaded!');
+            },
+            error: function() {
+                onResponse('Error! You can upload only .gif files.');
             }
-        })
+        });
+    }
+
+    function onResponse(text) {
+        $('#upload-alert').text(text);
     }
 
 });

@@ -628,6 +628,14 @@ label.fileUpload input[type="file"] {
 
 /* Upload */
 
+.upload-alert {
+  color: #FED54F;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 1em;
+  text-align: center;
+}
+
 .upload-zone {
   border-color:  lightgrey;
   border-style: dashed;
