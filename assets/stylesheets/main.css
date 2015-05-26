@@ -625,3 +625,78 @@ label.fileUpload input[type="file"] {
   background: #FED54F;
   color: #333;
 }
+
+/* Upload */
+
+.upload-alert {
+  color: #FED54F;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.upload-zone {
+  border-color:  lightgrey;
+  border-style: dashed;
+  margin: 1em 0;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.upload-zone span {
+  color: #FED54F;
+  display: block;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+.upload-zone .glyphicon {
+  font-size: 4em ;
+}
+
+.upload-zone input {
+  background-color: #302b2a;
+  border: none;
+  color: #FED54F;
+  font-weight: bold;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.upload-zone ::-webkit-input-placeholder {
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone :-moz-placeholder { /* Firefox 18- */
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone ::-moz-placeholder {  /* Firefox 19+ */
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.upload-zone :-ms-input-placeholder {
+  color: #FED54F;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-upload {
+  background-color:#FED54F;
+  border-radius: 0;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.upload-file input[type="file"] {
+  position: fixed;
+  top: -1000px;
+}

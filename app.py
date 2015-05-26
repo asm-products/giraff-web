@@ -73,5 +73,9 @@ def terms():
 def dmca():
     return render_template("dmca.html")
 
+@app.route("/upload.html")
+def upload():
+    return render_template("upload.html")
+
 if __name__ == "__main__":
     app.run()
